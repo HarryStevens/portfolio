@@ -80,6 +80,8 @@ function responsive() {
 		});
 		$('.main-project-img img').css({
 			'width' : '100%',
+			'border-right': 'none',
+			'padding-right': 'none'
 		});
 		$('.projects-item img').css({
 			'width' : '50px'
@@ -97,6 +99,8 @@ function responsive() {
 		});
 		$('.main-project-img img').css({
 			'width' : '50%',
+			'border-right': '1px solid #888',
+			'padding-right': '10px'
 		});
 		$('.projects-item img').css({
 			'width' : '80px'
