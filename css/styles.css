@@ -1,9 +1,13 @@
-.content {
-	margin-top: -20px;
-	height: 100vh;
-}
+/* NAVBAR */
 .navbar {
-	background: #000;
+	background: rgba(17,17,17,1);
+	background: -moz-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,17,17,1)), color-stop(52%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+	background: -webkit-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
+	background: -o-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
+	background: -ms-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
+	background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#131313', GradientType=0 );
 	border: 0;
 	border-radius: 0;
 }
@@ -15,12 +19,20 @@
 }
 .dropdown-menu {
 	background: #000;
+	margin-top: 6px;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-	background: #999;
+	background: #000;
+	height: 50px;
 }
-.dropdown-menu>li>a:hover {
-	background: #999;
+.dropdown-menu > li > a:hover {
+	background: #262626;
+}
+
+/* CONTENT WRAPPER */
+.content {
+	margin-top: -20px;
+	height: 100vh;
 }
 
 /* PROJECTS SIDE BAR */
@@ -48,7 +60,6 @@
 /* MAIN */
 .main {
 	margin-top: 20px;
-	transition: opacity .1s;
 }
 .main-title {
 	font-size: 30px;

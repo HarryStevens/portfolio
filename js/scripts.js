@@ -2,6 +2,8 @@ function toggleProject() {
 	//when click a projects item, do the following
 	$('.projects-item').mousedown(function() {
 
+		$('.main').fadeOut(0);
+
 		//display project name as title
 		var projectName = $(this).html();
 		$('.main-title').html(projectName);
@@ -30,10 +32,14 @@ function toggleProject() {
 		for (var i = 0; i <= projectContent.projects.length - 1; i++) {
 			var currProject = projectContent.projects[i];
 			if (currProject.project == projectContentName) {
+				$('.main').fadeIn();
+
 				$('.main-project').html(currProject.content);
+				console.log(currProject.content);
+
 				History.pushState({
 					state : i + 1
-				}, "State " + (i + 1), "?project=" + (i + 1));
+				}, "Portfolio", "?project=" + (i + 1));
 			}
 		}
 
