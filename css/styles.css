@@ -2,13 +2,33 @@
 	margin-top: -20px;
 	height: 100vh;
 }
+.navbar {
+	background: #000;
+	border: 0;
+	border-radius: 0;
+}
+.navbar a {
+	color: #fff !important;
+}
+.navbar-brand {
+	font-size: 30px;
+}
+.dropdown-menu {
+	background: #000;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	background: #999;
+}
+.dropdown-menu>li>a:hover {
+	background: #999;
+}
 
 /* PROJECTS SIDE BAR */
 .projects {
 	border-right: 1px solid #e7e7e7;
 	background: #f8f8f8;
-	height: 100vh;
 	padding-top: 20px;
+	height: 100vh;
 }
 .projects-title {
 	font-size: 24px;
@@ -28,6 +48,7 @@
 /* MAIN */
 .main {
 	margin-top: 20px;
+	transition: opacity .1s;
 }
 .main-title {
 	font-size: 30px;
