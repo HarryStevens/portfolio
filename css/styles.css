@@ -10,9 +10,14 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#131313', GradientType=0 );
 	border: 0;
 	border-radius: 0;
+	font-size: 18px;
 }
 .navbar a {
 	color: #fff !important;
+}
+.navbar a:hover {
+	color: #eee !important;
+	text-decoration: none;
 }
 .navbar-brand {
 	font-size: 30px;
@@ -32,34 +37,38 @@
 /* CONTENT WRAPPER */
 .content {
 	margin-top: -20px;
-	height: 100vh;
 }
 
 /* PROJECTS SIDE BAR */
 .projects {
 	border-right: 1px solid #e7e7e7;
 	background: #f8f8f8;
-	padding-top: 20px;
+	padding-top: 5px;
 	height: 100vh;
 }
 .projects-title {
 	font-size: 24px;
+	margin-bottom: 5px;
 }
 .projects-item {
 	cursor: pointer;
 	font-size: 18px;
 	color: #337ab7;
 	list-style-type: none;
-	margin-left: -15px;
+	margin-left: -35px;
+	margin-bottom: 10px;
 }
 .projects-item:hover {
 	text-decoration: underline;
 	color: #23527c;
 }
+.projects-item img {
+	margin-right: 5px;
+}
 
 /* MAIN */
 .main {
-	margin-top: 20px;
+	padding-top: 5px;
 }
 .main-title {
 	font-size: 30px;
@@ -68,10 +77,9 @@
 }
 .main-project {
 	padding-right: 10px;
-	text-align: center;
 }
-.main-project img {
-	width: 80%;
-	border: 1px solid #aaa;
-	padding: 10px;
+.main-project-img img {
+	float: left;
+	margin-right: 10px;
+	width: 50%;
 }
