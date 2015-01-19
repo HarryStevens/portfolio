@@ -17,11 +17,11 @@ function toggleProject() {
 		//JSON containing projects
 		var projectContent = {
 			"projects" : [{
-				'project' : 'Fuck-Boy',
+				'project' : 'Project-1',
 				'img' : '<img src="img/project-1.jpg" />',
 				'content' : '<p>This project is hella dope. I hope you really like it because I tried super hard to make it as dope as humanly possible. And, indeed, when you look at it, I bet you\'re like, "<a href="#">Damn, that is really dope</a>."</p><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p><p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p><p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>'
 			}, {
-				'project' : 'Big-Mun',
+				'project' : 'Project-2',
 				'img' : '<img src="img/project-2.jpg" />',
 				'content' : 'Damn, dogg. How did this project get so cool? I started working on it thinking it would be cool, but then it got, like, really, REALLY cool. And then I worked on it some more and -- BLAMO! -- I had a cool ass motherfucking project.'
 			}, {
@@ -39,7 +39,8 @@ function toggleProject() {
 		for (var i = 0; i <= projectContent.projects.length - 1; i++) {
 			var currProject = projectContent.projects[i];
 			if (currProject.project == projectContentName) {
-				$('.main').fadeIn(300);
+								
+				$('.main').fadeIn();
 
 				$('.main-project-img').html(currProject.img);
 				
@@ -47,7 +48,7 @@ function toggleProject() {
 
 				History.pushState({
 					state : i + 1
-				}, "Portfolio", "?project=" + (i + 1));
+				}, "Portfolio | "+currProject.project, "?project=" + (i + 1));
 			}
 		}
 
@@ -66,7 +67,7 @@ function responsive() {
 	if (windowWidth <= 992) {
 		//Small devices (tablets, 768px and up)
 		$('.projects').css({
-			'height' : '150px',
+			'height' : '190px',
 			'border-bottom' : '1px solid #e7e7e7',
 			'border-right' : 'none'
 		});

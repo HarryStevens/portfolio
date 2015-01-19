@@ -42,7 +42,7 @@
 /* PROJECTS SIDE BAR */
 .projects {
 	border-right: 1px solid #e7e7e7;
-	background: #f8f8f8;
+	background: #ddd;
 	padding-top: 5px;
 	height: 100vh;
 }
@@ -57,18 +57,24 @@
 	list-style-type: none;
 	margin-left: -35px;
 	margin-bottom: 10px;
+	border: 1px solid black;
+	background: #fff;
+	padding-right: 5px;
+	height:60px;
 }
 .projects-item:hover {
-	text-decoration: underline;
 	color: #23527c;
+	background: #eee;
 }
 .projects-item img {
 	margin-right: 5px;
+	height: 100%;
 }
 
 /* MAIN */
 .main {
 	padding-top: 5px;
+	font-size: 16px;
 }
 .main-title {
 	font-size: 30px;
