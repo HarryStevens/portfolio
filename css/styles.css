@@ -1,13 +1,13 @@
 /* NAVBAR */
 .navbar {
-	background: rgba(17,17,17,1);
-	background: -moz-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,17,17,1)), color-stop(52%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
-	background: -webkit-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
-	background: -o-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
-	background: -ms-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
-	background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(28,28,28,1) 52%, rgba(19,19,19,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#131313', GradientType=0 );
+	background: rgba(18,18,18,1);
+	background: -moz-linear-gradient(top, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 62%, rgba(13,13,13,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,18,18,1)), color-stop(62%, rgba(36,36,36,1)), color-stop(100%, rgba(13,13,13,1)));
+	background: -webkit-linear-gradient(top, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 62%, rgba(13,13,13,1) 100%);
+	background: -o-linear-gradient(top, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 62%, rgba(13,13,13,1) 100%);
+	background: -ms-linear-gradient(top, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 62%, rgba(13,13,13,1) 100%);
+	background: linear-gradient(to bottom, rgba(18,18,18,1) 0%, rgba(36,36,36,1) 62%, rgba(13,13,13,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#0d0d0d', GradientType=0 );
 	border: 0;
 	border-radius: 0;
 	font-size: 18px;
@@ -42,7 +42,7 @@
 /* PROJECTS SIDE BAR */
 .projects {
 	border-right: 1px solid #e7e7e7;
-	background: #ddd;
+	background: #eee;
 	padding-top: 5px;
 	height: 100vh;
 }
@@ -57,14 +57,20 @@
 	list-style-type: none;
 	margin-left: -35px;
 	margin-bottom: 10px;
-	border: 1px solid black;
+	border: 1px solid #888;
+	border-radius: 4px;
 	background: #fff;
 	padding-right: 5px;
-	height:60px;
+	height: 60px;
 }
 .projects-item:hover {
 	color: #23527c;
-	background: #eee;
+	background: #aaa;
+}
+.active {
+	color: #23527c;
+	background: #aaa;
+	cursor: default;
 }
 .projects-item img {
 	margin-right: 5px;
